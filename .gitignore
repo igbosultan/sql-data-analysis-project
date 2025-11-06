@@ -1,0 +1,34 @@
+# System & OS files
+.DS_Store
+Thumbs.db
+
+# Temporary / Log files
+*.tmp
+*.log
+*.bak
+*.dump
+*.sql~
+*.old
+
+# Environment or config files
+*.env
+config.json
+*.ini
+
+# Large or raw data files
+data/*.csv
+data/*.xlsx
+data/*.json
+data/*.zip
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python cache (if using scripts)
+__pycache__/
+*.pyc
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
