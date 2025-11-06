@@ -8,8 +8,9 @@ Save results sets as new tables.
 
 Exercise
 
-Suppose we want to find out which country had the lowest percentage of people with access to managed drinking water services in 2020.
-%%sql
+Exploring the database
+Use the SELECT statement to display all the columns from the Access_to_Basic_Services table. This will help us get a feel for the data we're working with.
+ %%sql
 
 SELECT 
     *
@@ -20,8 +21,7 @@ LIMIT 5;
 * mysql+pymysql://root:***@localhost:3306/united_nations
 5 rows affected.
 
-Exploring the database
-Use the SELECT statement to display all the columns from the Access_to_Basic_Services table. This will help us get a feel for the data we're working with.
+Suppose we want to find out which country had the lowest percentage of people with access to managed drinking water services in 2020.
  
 %%sql
 select Pct_managed_drinking_water_services
@@ -31,6 +31,8 @@ LIMIT 100;
 
 * mysql+pymysql://root:***@localhost:3306/united_nations
 100 rows affected.
+ 
+
 
 The previous query may return a large number of rows, which could slow down our system. Modify the query to limit the number of rows returned to 10.
 
