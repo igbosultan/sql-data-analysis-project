@@ -9,6 +9,16 @@ Save results sets as new tables.
 Exercise
 
 Suppose we want to find out which country had the lowest percentage of people with access to managed drinking water services in 2020.
+%%sql
+
+SELECT 
+    *
+FROM
+    Access_to_Basic_Services
+LIMIT 5;
+
+* mysql+pymysql://root:***@localhost:3306/united_nations
+5 rows affected.
 
 Exploring the database
 Use the SELECT statement to display all the columns from the Access_to_Basic_Services table. This will help us get a feel for the data we're working with.
